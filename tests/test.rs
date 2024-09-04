@@ -1,7 +1,3 @@
-use hello_rust::config::Config;
-
-
-use std::io::Read;
 
 
 #[test]
