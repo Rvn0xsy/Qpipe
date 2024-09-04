@@ -1,0 +1,7 @@
+/target
+.idea
+.vscode/
+tests/*.yaml
+tests/*.sh
+tests/*.py
+docs/NOTE.md
