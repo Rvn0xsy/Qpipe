@@ -1,9 +1,7 @@
-use std::env;
-use std::fs::File;
 use hello_rust::config::Config;
 
 
-use std::io::{self, BufReader, Read};
+use std::io::Read;
 
 
 #[test]
@@ -44,16 +42,13 @@ fn print_any_value(value: AnyValue) {
 
 #[cfg(test)]
 mod tests {
-    use std::{env, io, thread, time};
-    use std::fs::File;
-    use std::io::{BufReader, Read};
-    use std::sync::Arc;
-    use std::thread::sleep;
-    use futures::SinkExt;
     use chrono::{Local, Utc};
     use cron::Schedule;
+    use std::fs::File;
+    use std::io::{BufReader, Read};
     use std::str::FromStr;
-    use hello_rust::config::Config;
+    use std::thread::sleep;
+    use std::io;
 
     pub fn read_from_pipe(pipe_path: &str) -> io::Result<String> {
         // 打开命名管道
