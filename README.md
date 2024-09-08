@@ -109,3 +109,8 @@ curl -X GET http://127.0.0.1:3000/history_analysis -H "Process-ID: $process_id"
 
 - 数据分析与总结：分析当日系统上执行的命令，并给出文字总结
 - 数据提取：提取网络空间搜索引擎语句
+- ...
+
+## TODO
+
+-[ ] 支持OpenAI
